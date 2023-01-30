@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  View, 
+  View,
   Text,
   StyleSheet,
   TouchableOpacity
@@ -16,7 +16,6 @@ const Home = () => {
   const {count} = useSelector(store => store?.counter)
   const navigation = useNavigation();
   const dispatch = useDispatch();
-  console.log(count);
 
   function add() {
     dispatch(addCounter(count));
